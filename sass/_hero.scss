@@ -63,6 +63,11 @@
           @extend %btn;
           background-color: $main__blue;
           cursor: pointer;
+          transition: transform 0.1s ease;
+          cursor: pointer;
+          &:active {
+            transform: scale(0.95);
+          }
         }
   
         .arrow__down {
@@ -224,7 +229,7 @@
       }
     }
     
-    .plan-card {
+    .plan__card {
       @include card-base;
       text-align: center;
       transition: transform 0.2s ease;
