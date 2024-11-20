@@ -193,16 +193,16 @@
     }
     
     .toggle-btn {
-      padding: $spacing-sm $spacing-lg;
+      padding: 0 0;
       border: none;
-      border-radius: $radius-sm;
+      border-radius: 10px;
       cursor: pointer;
-      background: transparent;
+      background: $main__white;
       transition: all 0.2s ease;
     
       &.active {
-        background: $primary-color;
-        color: $white;
+        background: $main__blue;
+        color: $main__white;
       }
     
       &:hover:not(.active) {
@@ -210,7 +210,6 @@
       }
     }
     
-    // Pricing Plans Section
     .pricing-plans {
       @include grid-columns(3);
       max-width: 1200px;
@@ -238,19 +237,19 @@
         background: $secondary-color;
         color: $white;
     
-        .plan-features li {
+        .plan__features li {
           color: rgba($white, 0.9);
         }
       }
     }
     
-    .plan-name {
+    .plan__name {
       font-size: 1.5rem;
       margin-bottom: $spacing-md;
       font-weight: 600;
     }
     
-    .plan-price {
+    .plan__price {
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: $spacing-lg;
@@ -261,7 +260,7 @@
       }
     }
     
-    .plan-features {
+    .plan__features {
       list-style: none;
       margin-bottom: $spacing-xl;
     
@@ -271,7 +270,7 @@
       }
     }
     
-    .plan-button {
+    .plan__button {
       display: inline-block;
       padding: $spacing-sm $spacing-xl;
       border-radius: $radius-sm;
@@ -301,7 +300,7 @@
       }
     }
     
-    .highlighted .plan-button {
+    .highlighted .plan__button {
       background: $white;
       color: $secondary-color;
       border: none;
